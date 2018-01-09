@@ -1,0 +1,51 @@
+/
+
+    README  : this file
+
+/KAT/
+
+    PQCkemKAT_288.req  and PQCkemKAT_288.rsp : precomputed KAT files
+
+/Reference_Implementation/
+
+    api.h           : the required api
+    dme.h and dme.c : the implementation of the DME primitives
+    rng.h and rng.c : random number generator (provided by NIST)
+    PQCgenKAT_kem.c : the known answer test generator (provided by NIST)
+    makefile        : for automated building (setup.h, dme.o, KAT)
+
+/Reference_Implementation/setup/
+
+    bigint.h and bigint.c : fixed precision 384-bits integer arithmetic
+    find_min_poly.c       : to find random irreducible polynomials of degree 2
+                            and 3 in Fq[X]
+    find_best_exps.c      : to find the best exponential maps and related
+                            constants
+    find_m1_m2.c          : to precompute the matrices M1, M2, M1^(-1), M2^(-1)
+                            used to convert a secret key into a public key
+    makefile              : for automated building of setup.h
+
+/Optimized_Implementation/
+
+    A copy of the /Reference_Implementation/ directory
+
+/Supporting_Documentation/
+    
+    Cover_Page.pdf
+
+    DME.pdf  : description of the system
+
+    dme_implementatiom.pdf : a description of all the dme-kem cryptosystem as it is implemented
+              in the code
+
+    dme_implementatiom .tex : LaTeX source code for dme.pdf
+
+    Luengo.pdf : statement of the author of the scheme
+
+    avendano.pdf : statement of the author of the implementation 
+
+    MMarco.pdf : statement of the author of the implementation 
+    
+    DME-patent_dec.pdf  : statement of the patent owner
+    
+    Timings statistics for DME-(3,2,48) and DME-(3,2,24) on a i7.txt  : Time using for DME-(3,2,48) and DME-         (3,2,24) using our own APIs.
